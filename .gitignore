@@ -13,8 +13,6 @@ reports/
 powerbi/
 powerbi/.pbi/
 
-# real Kaggle data: each person downloads it (do not redistribute)
-data/raw/
-
 # Office temp files
 ~$*
+data/raw/messy_zip/submission.csv

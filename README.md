@@ -7,9 +7,7 @@ DMDW Lab (26B16CS313), JIIT Noida.
 ```powershell
 py -3.11 -m pip install -r requirements.txt
 ```
-3. Download the two Kaggle datasets and put them here (not in Git, each person downloads them):
-   - `data/raw/university_canteen_waste.csv`  (Food Waste Dataset from a University Canteen)
-   - `data/raw/messy_zip/train.csv`  (Messy Food Waste Prediction Dataset, from the zip)
+3. The two Kaggle datasets are already included in `data/raw/` (see `data/raw/SOURCES.md`); nothing to download.
 4. Run everything (about 1 minute): `.\run_all.ps1`
 5. Dashboards:
    - Streamlit (works anywhere): `py -3.11 -m streamlit run app/dashboard.py`
