@@ -9,7 +9,7 @@ from matplotlib.patches import FancyBboxPatch
 
 ROOT = Path(__file__).resolve().parents[1]
 R, P = ROOT / "reports", ROOT / "data/processed"
-F = R / "figures"; F.mkdir(exist_ok=True)
+F = R / "figures"; F.mkdir(parents=True, exist_ok=True)
 res = json.loads((R / "mining_results.json").read_text())
 plt.rcParams.update({"font.size": 11, "axes.spines.top": False, "axes.spines.right": False, "figure.dpi": 150})
 C1, C2, C3 = "#2F6B5E", "#E08E45", "#8A9BA8"

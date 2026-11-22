@@ -25,7 +25,7 @@ from sklearn.model_selection import KFold, cross_validate
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW, PROC, R = ROOT / "data/raw", ROOT / "data/processed", ROOT / "reports"
-FIG = R / "figures"; PROC.mkdir(exist_ok=True); FIG.mkdir(exist_ok=True)
+FIG = R / "figures"; PROC.mkdir(parents=True, exist_ok=True); FIG.mkdir(parents=True, exist_ok=True)
 out, prof = {}, []
 plt.rcParams.update({"font.size": 11, "axes.spines.top": False, "axes.spines.right": False, "figure.dpi": 150})
 C1, C2, C3 = "#2F6B5E", "#E08E45", "#8A9BA8"
